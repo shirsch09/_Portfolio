@@ -1,0 +1,44 @@
+[
+  {
+    "modalTitle": "Trunk or Treat",
+    "category": "Web Design",
+    "bgImage": "imgs/trunk1.png",
+    "images": [
+      "imgs/trunk1.png"
+    ],
+    "link": "https://samhirsch0109.github.io/trunk-or-treat/",
+    "description": [
+      "Designed and developed an interactive website for a school Trunk or Treat event",
+      "Used HTML, CSS, JavaScript, and jQuery to create an engaging experience",
+      "Used jQuery to load JavaScript functionality when the page starts"
+    ]
+  },
+  {
+    "modalTitle": "NJIT Movie Gallery",
+    "category": "Web Development",
+    "bgImage": "imgs/njit2.png",
+    "images": [
+      "imgs/njit2.png"
+    ],
+    "link": "https://samhirsch0109.github.io/NJIT-Project-2/",
+    "description": [
+      "Built an interactive movie gallery using Vue and JSON",
+      "Used JSON data to dynamically display project content",
+      "Applied Vue to create a more interactive and organized user experience"
+    ]
+  },
+  {
+    "modalTitle": "Marlboro Track & Field",
+    "category": "Web Design",
+    "bgImage": "imgs/track1.png",
+    "images": [
+      "imgs/track1.png"
+    ],
+    "link": "https://samhirsch0109.github.io/Marlboro-Track",
+    "description": [
+      "Designed and developed an informational website for the Marlboro High School Track & Field team as a Work Based Learning Project",
+      "Created a responsive layout using HTML, CSS, JavaScript, and Bootstrap",
+      "Focused on creating a clear and accessible experience for students, athletes, and families"
+    ]
+  }
+]
