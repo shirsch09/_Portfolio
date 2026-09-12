@@ -47,27 +47,7 @@
       </div>
     </div>
   </nav>
-  <!-- Hero Section -->
-  <header class="hero-container">
-      <!-- Floating Particles -->
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-    <div class="text-center">
-      <h1 class="hero-heading">SCH</h1>
-      <p class="hero-subheading">Creative Developer & Web Designer </p>
-
-      <div class="scroll-indicator">
-        <a href="#welcome" class="hero-arrow-link">
-          <div class="hero-arrow">↓</div>
-        </a>
-      </div>
-    </div>
-  </header>
+ 
   <!-- Welcome Section -->
   <section id="welcome" class="welcome-section py-5">
     <div class="container">
@@ -79,14 +59,14 @@
         <div class="col-md-8 text-md-start text-center" id="move">
           <h2 class="fw-bold mb-3">Hi, I'm Samantha Hirsch!</h2>
           <p class="lead mb-0">
-            I'm a graduating senior from Marlboro High School, and I’ll be attending Michigan State University this fall
-            to pursue a major in Computer Science, with a potential minor in Business. I'm passionate about
-            problem-solving and love bringing ideas to life through web design and development. I'm always eager to
-            learn, grow, and take on new creative challenges.
+          I’m a sophomore at Michigan State University majoring in Experience Architecture. I’m passionate about design, technology, and creating meaningful digital experiences. I enjoy combining creativity and problem-solving to bring ideas to life through web design, development, and visual design. I’m always looking to learn new skills, explore creative ideas, and take on new challenges.
 
-        </div>
-        </p>
-      </div>
+       <br> <a href="imgs/Resume Samantha Hirsch (2).pdf" target="_blank" class="resume-btn">
+  View My Resume
+</a>
+</div>
+      </p>
+       </div>
     </div>
     </div>
   </section>
@@ -103,7 +83,7 @@
             <div class="card-body">
               <img src="imgs/realhtml.png" alt="HTML Logo" class="img-fluid mb-3" style="max-height: 80px;">
               <h5 class="card-title">HTML</h5>
-              <p class="card-text">I use it to build the structure of websites.</p>
+              <p class="card-text">I use HTML to build the structure and content of websites.</p>
             </div>
           </div>
         </div>
@@ -113,7 +93,7 @@
             <div class="card-body">
               <img src="imgs/realcss.png" alt="CSS Logo" class="img-fluid mb-3" style="max-height: 80px;">
               <h5 class="card-title">CSS</h5>
-              <p class="card-text">I style pages to make them visually appealing and responsive.</p>
+              <p class="card-text">I use CSS to style websites and create responsive, visually appealing layouts.</p>
             </div>
           </div>
         </div>
@@ -123,7 +103,7 @@
             <div class="card-body">
               <img src="imgs/realjs.png" alt="JavaScript Logo" class="img-fluid mb-3" style="max-height: 80px;">
               <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">I add interactivity and dynamic features to websites.</p>
+              <p class="card-text">I use JavaScript to add interactivity and functionality to websites.</p>
             </div>
           </div>
         </div>
@@ -131,9 +111,9 @@
         <div class="col-6 col-md-4">
           <div class="card text-center h-100">
             <div class="card-body">
-              <img src="imgs/bootstrap.png" alt="Bootstrap Logo" class="img-fluid mb-3" style="max-height: 80px;">
-              <h5 class="card-title">Bootstrap</h5>
-              <p class="card-text">I speed up development using pre-built responsive components.</p>
+              <img src="imgs/dbc32aa496f21ffa8508a4f6432d1e6c6f76e3b1.avif" alt="Bootstrap Logo" class="img-fluid mb-3" style="max-height: 80px;">
+              <h5 class="card-title">Figma</h5>
+              <p class="card-text">I use Figma to create interfaces, layouts, and digital designs.</p>
             </div>
           </div>
         </div>
@@ -141,9 +121,9 @@
         <div class="col-6 col-md-4">
           <div class="card text-center h-100">
             <div class="card-body">
-              <img src="imgs/vue.png" alt="Vue.js Logo" class="img-fluid mb-3" style="max-height: 80px;">
-              <h5 class="card-title">Vue</h5>
-              <p class="card-text">I use Vue for building dynamic and reactive interfaces.</p>
+              <img src="imgs/Adobe_Illustrator_CC_icon-1.svg.webp" alt="Vue.js Logo" class="img-fluid mb-3" style="max-height: 80px;">
+              <h5 class="card-title">Adobe Illustator</h5>
+              <p class="card-text">I use Illustrator to create graphics, logos, and vector designs.</p>
             </div>
           </div>
         </div>
@@ -164,13 +144,13 @@
   <!--end of skills -->
 
 
-  <!--start of gallery-->
+   <!--start of gallery-->
   <section id="vue_app" class="container py-5">
     <div class="text-center">
       <h1 class="text-center my-3">{{ pageTitle }}</h1>
     </div>
     <p class="text-center text-muted mb-4 fs-5">
-      Click on any project to view images and the site.
+      Click on any project to view more information!
     </p>
     <div class="parallax-grid">
       <div class="project-container parallax-item" v-for="(project, index) in projects" :key="index">
@@ -183,7 +163,8 @@
         </div>
       </div>
     </div>
-    <!-- Modals -->
+
+     <!-- Modals -->
     <div v-for="(project, index) in projects" :key="'modal-'+index">
       <div class="modal fade" :id="'carouselModal' + index" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -194,6 +175,16 @@
             </div>
             <div class="modal-body">
               <!-- IMAGE SLIDES -->
+
+              <!-- VIDEO -->
+<div class="carousel-item active" v-if="project.type === 'video'">
+  <video class="d-block w-100" controls>
+    <source :src="project.file" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- IMAGE SLIDES -->
               <template v-for="(image, imgIndex) in project.images" :key="'image-' + imgIndex">
                 <div class="carousel-item" :class="{ active: !project.video && imgIndex === 0 }">
                   <a :href="project.link" target="_blank" v-if="project.link">
@@ -202,9 +193,9 @@
                   <img v-else :src="image" class="d-block w-100" :alt="'Image ' + imgIndex" />
                 </div>
               </template>
-            </div>
+              </div>
 
-            <!-- Toggle Button and Description - OUTSIDE the carousel -->
+             <!-- Toggle Button and Description - OUTSIDE the carousel -->
             <div class="text-center my-3">
               <button class="btn-toggle-description" @click="project.showDescription = !project.showDescription">
                 {{ project.showDescription ? 'Hide Description' : 'Show Description' }}
@@ -222,8 +213,8 @@
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
+            </div>  
+             </div>
         </div>
       </div>
     </div>
@@ -231,6 +222,8 @@
     </div>
     </div>
   </section>
+
+  
 
   
   <!-- Footer -->
@@ -241,7 +234,6 @@
         <div class="logo-container">
           <img src="imgs/logo.png" alt="SCH Logo" class="footer-logo">
         </div>
-        <p class="brand-text">Designed and built by Sam Hirsch</p>
       </div>
       <!-- Navigation Links -->
       <div class="footer-links">
@@ -259,7 +251,7 @@
         <ul class="contact-list">
           <li class="contact-item">
             <i class="fas fa-envelope"></i>
-            <span>sammyhirsch0109@gmail.com</span>
+            <span>hirschs9@msu.edu</span>
           </li>
           <li class="contact-item">
             <i class="fas fa-phone"></i>
@@ -273,10 +265,10 @@
       <div class="footer-social">
         <h4 class="footer-heading">Reach Out  </h4>
         <div class="social-icons">
-          <a href="https://github.com/dashboard" target="_blank" aria-label="GitHub" class="social-icon">
-            <i class="fab fa-github"></i>
+          <a href="https://www.linkedin.com/in/samantha-hirsch-7408743b9/" target="_blank" aria-label="GitHub" class="social-icon">
+            <i class="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:sammyhirsch0109@gmail.com" target="_blank" aria-label="Email" class="social-icon">
+          <a href="mailto:hirschs9@msu.edu" target="_blank" aria-label="Email" class="social-icon">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
@@ -285,7 +277,7 @@
 
  
     <div class="footer-bottom">
-      <p>&copy; 2025 Samantha Hirsch. All rights reserved.</p>
+      <p>&copy; 2026 Samantha Hirsch. </p>
     </div>
   </footer>
   <!-- Scripts -->

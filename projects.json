@@ -1,5 +1,19 @@
 [
   {
+    "modalTitle": "Marlboro Track & Field",
+    "category": "Web Design",
+    "bgImage": "imgs/track1.png",
+    "images": [
+      "imgs/track1.png"
+    ],
+    "link": "https://samhirsch0109.github.io/Marlboro-Track",
+    "description": [
+      "Designed and developed an informational website for the Marlboro High School Track & Field team as a Work Based Learning Project",
+      "Created a responsive layout using HTML, CSS, JavaScript, and Bootstrap",
+      "Focused on creating a clear and accessible experience for students, athletes, and families"
+    ]
+  },
+  {
     "modalTitle": "Trunk or Treat",
     "category": "Web Design",
     "bgImage": "imgs/trunk1.png",
@@ -27,18 +41,41 @@
       "Applied Vue to create a more interactive and organized user experience"
     ]
   },
+
   {
-    "modalTitle": "Marlboro Track & Field",
-    "category": "Web Design",
-    "bgImage": "imgs/track1.png",
+    "modalTitle": "Friendship Circle Homepage",
+    "category": "UI / Web Design",
+    "bgImage": "imgs/homepage.jpg",
     "images": [
-      "imgs/track1.png"
+      "imgs/homepage.jpg"
     ],
-    "link": "https://samhirsch0109.github.io/Marlboro-Track",
     "description": [
-      "Designed and developed an informational website for the Marlboro High School Track & Field team as a Work Based Learning Project",
-      "Created a responsive layout using HTML, CSS, JavaScript, and Bootstrap",
-      "Focused on creating a clear and accessible experience for students, athletes, and families"
+      "Designed a homepage concept for Friendship Circle",
+      "Created a visual layout focused on clear navigation and accessible information",
+      "Combined typography, color, imagery, and interface elements to create a cohesive design"
     ]
-  }
+  },
+  {
+  "modalTitle": "Idiom Animation",
+  "category": "Animation",
+  "bgImage": "imgs/animation.gif",
+  "images": [
+    "imgs/animation.gif"
+  ],
+  "description": [
+    "Created an animation using Adobe After Effects and Photoshop",
+    "Used motion, timing, and visual design to bring the concept to life"
+  ]
+},
+{
+  "modalTitle": "Animation",
+  "category": "Animation",
+    "bgImage": "imgs/logopic.png",
+  "file": "imgs/animation.mp4",
+  "type": "video",
+  "description": [
+    "Created an animation using Adobe After Effects and Photoshop",
+    "Used motion, timing, and visual design to bring the concept to life"
+  ]
+}
 ]

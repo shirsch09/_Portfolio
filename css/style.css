@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding-top: 120px;
+
   scroll-behavior: smooth;
   font-family: 'Montserrat';
   background-color: #fdfdfd;
@@ -29,346 +31,24 @@ p.lead {
   color: #4b5563;
 }
 
-/* Section spacing */
-section {
-  padding: 4rem 0;
-}
 
 /* Link styling for lists */
 ul.list-unstyled a {
   text-decoration: none;
   color: #8755e4 !important;
 }
-/* ===========================
- * YOUR ORIGINAL HERO SECTION (UNCHANGED)
- =========================== */
-
-/* Main hero container with animated gradient */
-.hero-container {
-  height: 100vh;
-  background: linear-gradient(135deg, #8755e4, #7f00b6);
-  background-size: 400% 400%;
-  animation: subtleGradient 8s ease infinite;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Animated gradient background effect */
-@keyframes subtleGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Geometric accent elements */
-.hero-container::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.hero-container::after {
-  content: "";
-  position: absolute;
-  bottom: 25%;
-  left: 15%;
-  width: 80px;
-  height: 80px;
-  z-index: 0;
-}
-
-/* Text content positioning */
-.text-center {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hero main heading */
-.hero-heading {
-  font-size: 10vw;
-  font-weight: 900;
-  letter-spacing: 12px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 1rem;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transform: translateY(30px);
-  animation: smoothFadeUp 1.2s ease-out forwards;
-  animation-delay: 0.2s;
-}
-
-/* Hero subheading */
-.hero-subheading {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: smoothFadeUp 1.2s ease-out forwards;
-  animation-delay: 0.6s;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Scroll indicator container */
-.scroll-indicator {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: smoothFadeUp 1.2s ease-out forwards;
-  animation-delay: 1.2s;
-}
-
-/* Scroll indicator text */
-.scroll-text {
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300;
-}
-
-/* Scroll arrow link */
-.hero-arrow-link {
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-/* Animated scroll arrow */
-.hero-arrow {
-  font-size: 3rem;
-  cursor: pointer;
-  color: white;
-  text-decoration: none !important;
-  display: inline-block;
-  line-height: 1;
-  transition: all 0.3s ease;
-  animation: gentleBounce 2s infinite ease-in-out;
-  animation-delay: 2s;
-}
-
-/* Arrow hover effect */
-.hero-arrow:hover {
-  transform: translateY(-5px);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Gentle bounce animation for arrow */
-@keyframes gentleBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-/* Smooth fade up animation */
-@keyframes smoothFadeUp {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-/* Hero responsive design */
-@media (max-width: 768px) {
-  .hero-heading {
-      font-size: 14vw;
-      letter-spacing: 6px;
-  }
-  .hero-subheading {
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-  }
-  .hero-arrow {
-      font-size: 2.5rem;
-  }
-  .hero-container::before,
-  .hero-container::after {
-      display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-heading {
-      font-size: 16vw;
-      letter-spacing: 4px;
-  }
-  .hero-subheading {
-      font-size: 1rem;
-      letter-spacing: 1px;
-  }
-}
-
-/* ===========================
-* FLOATING PARTICLES (ADD THESE)
-=========================== */
-
-/* Floating particles - positioned behind text */
-.particle {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  animation: float 6s ease-in-out infinite;
-  z-index: 0; /* Behind text content */
-  pointer-events: none; /* Don't interfere with clicks */
-}
-
-.particle:nth-child(2) { 
-  width: 80px; 
-  height: 80px; 
-  top: 20%; 
-  left: 10%; 
-  animation-delay: 0s; 
-}
-
-.particle:nth-child(3) { 
-  width: 60px; 
-  height: 60px; 
-  top: 60%; 
-  left: 80%; 
-  animation-delay: 2s; 
-}
-
-.particle:nth-child(4) { 
-  width: 40px; 
-  height: 40px; 
-  top: 40%; 
-  left: 70%; 
-  animation-delay: 4s; 
-}
-
-.particle:nth-child(5) { 
-  width: 100px; 
-  height: 100px; 
-  top: 80%; 
-  left: 20%; 
-  animation-delay: 1s; 
-}
-
-.particle:nth-child(6) { 
-  width: 50px; 
-  height: 50px; 
-  top: 10%; 
-  left: 60%; 
-  animation-delay: 3s; 
-}
-
-.particle:nth-child(7) { 
-  width: 35px; 
-  height: 35px; 
-  top: 30%; 
-  left: 30%; 
-  animation-delay: 5s; 
-}
-
-.particle:nth-child(8) { 
-  width: 70px; 
-  height: 70px; 
-  top: 70%; 
-  left: 60%; 
-  animation-delay: 1.5s; 
-}
-
-.particle:nth-child(9) { 
-  width: 45px; 
-  height: 45px; 
-  top: 15%; 
-  left: 85%; 
-  animation-delay: 2.5s; 
-}
-
-.particle:nth-child(10) { 
-  width: 90px; 
-  height: 90px; 
-  top: 50%; 
-  left: 5%; 
-  animation-delay: 0.5s; 
-}
-
-.particle:nth-child(11) { 
-  width: 25px; 
-  height: 25px; 
-  top: 85%; 
-  left: 75%; 
-  animation-delay: 3.5s; 
-}
-
-.particle:nth-child(12) { 
-  width: 55px; 
-  height: 55px; 
-  top: 5%; 
-  left: 40%; 
-  animation-delay: 4.5s; 
-}
-
-.particle:nth-child(13) { 
-  width: 65px; 
-  height: 65px; 
-  top: 65%; 
-  left: 40%; 
-  animation-delay: 1.8s; 
-}
-
-/* Particle floating animation */
-@keyframes float {
-  0%, 100% { 
-      transform: translateY(0px) rotate(0deg); 
-      opacity: 0.3; 
-  }
-  50% { 
-      transform: translateY(-15px) rotate(180deg); 
-      opacity: 0.6; 
-  }
-}
-
-/* Hide some particles on mobile for performance */
-@media (max-width: 768px) {
-  .particle:nth-child(7),
-  .particle:nth-child(9),
-  .particle:nth-child(11),
-  .particle:nth-child(13) {
-      display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .particle:nth-child(4),
-  .particle:nth-child(6),
-  .particle:nth-child(8),
-  .particle:nth-child(10),
-  .particle:nth-child(12) {
-      display: none;
-  }
-}
 
 
-/* NAVBAR!!!!!! */
+/* NAVBAR */
 
 /* Main navbar styling */
 .navbar {
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.4s ease, transform 0.4s ease;
   background-color: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 10px 0;
-}
-
-/* Show navbar when scrolled */
-.navbar.show {
-  opacity: 1;
-  transform: translateY(0);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Navigation links */
@@ -380,23 +60,6 @@ ul.list-unstyled a {
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
-}
-
-/* Animated hover effect for nav links */
-.navbar .nav-link:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(135, 85, 228, 0.2), transparent);
-  transition: all 0.6s ease;
-  z-index: -1;
-}
-
-.navbar .nav-link:hover:before {
-  left: 100%;
 }
 
 /* Nav link hover and active states */
@@ -539,3 +202,23 @@ ul.list-unstyled a {
   } 
 }
 
+
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #8755e4;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #7f00b6;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
