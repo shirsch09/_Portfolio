@@ -1,5 +1,61 @@
 [
   {
+    "modalTitle": "Friendship Circle Homepage",
+    "category": "UI / Web Design",
+    "bgImage": "imgs/homepage.jpg",
+    "images": [
+      "imgs/homepage.jpg"
+    ],
+    "link": "imgs/homepage.jpg",
+    "description": [
+      "Designed a homepage concept for Friendship Circle in Figma",
+      "Created a clear visual hierarchy to organize navigation and information",
+      "Used typography, color, imagery, and interface elements to create a cohesive user experience"
+    ]
+  },
+  {
+    "modalTitle": "Friendship Circle Flyer",
+    "category": "Graphic Design",
+    "bgImage": "imgs/flyer.png",
+    "images": [
+      "imgs/flyer.png"
+    ],
+    "link": "imgs/flyer.pdf",
+    "description": [
+      "Designed a promotional flyer for Friendship Circle",
+      "Used typography, color, imagery, and layout to communicate information clearly",
+      "Focused on creating an engaging and cohesive visual design"
+    ]
+  },
+  {
+    "modalTitle": "Illustrator Drawing",
+    "category": "Graphic Design",
+    "bgImage": "imgs/IMG_6777.jpg",
+    "images": [
+      "imgs/IMG_6777.jpg"
+    ],
+    "link": "imgs/IMG_6777.jpg",
+    "description": [
+      "Created a digital illustration using Adobe Illustrator",
+      "Experimented with shape, composition, color, and visual balance",
+      "Focused on translating an idea into a cohesive and visually engaging graphic"
+    ]
+  },
+  {
+    "modalTitle": "Idiom Animation",
+    "category": "Animation",
+    "bgImage": "imgs/animation.gif",
+    "images": [
+      "imgs/animation.gif"
+    ],
+    "link": "imgs/animation.gif",
+    "description": [
+      "Created an animated interpretation of an idiom using Adobe After Effects and Photoshop",
+      "Used motion, timing, and composition to communicate the concept visually",
+      "Combined graphic design and animation to create an engaging visual piece"
+    ]
+  },
+  {
     "modalTitle": "Marlboro Track & Field",
     "category": "Web Design",
     "bgImage": "imgs/track1.png",
@@ -8,74 +64,9 @@
     ],
     "link": "https://samhirsch0109.github.io/Marlboro-Track",
     "description": [
-      "Designed and developed an informational website for the Marlboro High School Track & Field team as a Work Based Learning Project",
-      "Created a responsive layout using HTML, CSS, JavaScript, and Bootstrap",
-      "Focused on creating a clear and accessible experience for students, athletes, and families"
+      "Designed and developed an informational website for the Marlboro High School Track & Field team",
+      "Organized team information, schedules, and resources into a clear website structure",
+      "Used layout, typography, color, and responsive design to create an accessible experience"
     ]
-  },
-  {
-    "modalTitle": "Trunk or Treat",
-    "category": "Web Design",
-    "bgImage": "imgs/trunk1.png",
-    "images": [
-      "imgs/trunk1.png"
-    ],
-    "link": "https://samhirsch0109.github.io/trunk-or-treat/",
-    "description": [
-      "Designed and developed an interactive website for a school Trunk or Treat event",
-      "Used HTML, CSS, JavaScript, and jQuery to create an engaging experience",
-      "Used jQuery to load JavaScript functionality when the page starts"
-    ]
-  },
-  {
-    "modalTitle": "NJIT Movie Gallery",
-    "category": "Web Development",
-    "bgImage": "imgs/njit2.png",
-    "images": [
-      "imgs/njit2.png"
-    ],
-    "link": "https://samhirsch0109.github.io/NJIT-Project-2/",
-    "description": [
-      "Built an interactive movie gallery using Vue and JSON",
-      "Used JSON data to dynamically display project content",
-      "Applied Vue to create a more interactive and organized user experience"
-    ]
-  },
-
-  {
-    "modalTitle": "Friendship Circle Homepage",
-    "category": "UI / Web Design",
-    "bgImage": "imgs/homepage.jpg",
-    "images": [
-      "imgs/homepage.jpg"
-    ],
-    "description": [
-      "Designed a homepage concept for Friendship Circle",
-      "Created a visual layout focused on clear navigation and accessible information",
-      "Combined typography, color, imagery, and interface elements to create a cohesive design"
-    ]
-  },
-  {
-  "modalTitle": "Idiom Animation",
-  "category": "Animation",
-  "bgImage": "imgs/animation.gif",
-  "images": [
-    "imgs/animation.gif"
-  ],
-  "description": [
-    "Created an animation using Adobe After Effects and Photoshop",
-    "Used motion, timing, and visual design to bring the concept to life"
-  ]
-},
-{
-  "modalTitle": "Animation",
-  "category": "Animation",
-    "bgImage": "imgs/logopic.png",
-  "file": "imgs/animation.mp4",
-  "type": "video",
-  "description": [
-    "Created an animation using Adobe After Effects and Photoshop",
-    "Used motion, timing, and visual design to bring the concept to life"
-  ]
-}
+  }
 ]
