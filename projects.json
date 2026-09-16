@@ -27,6 +27,20 @@
       "Focused on creating an engaging and cohesive visual design"
     ]
   },
+   {
+    "modalTitle": "Marlboro Track & Field",
+    "category": "Web Design",
+    "bgImage": "imgs/track1.png",
+    "images": [
+      "imgs/track1.png"
+    ],
+    "link": "https://samhirsch0109.github.io/Marlboro-Track",
+    "description": [
+      "Designed and developed an informational website for the Marlboro High School Track & Field team",
+      "Organized team information, schedules, and resources into a clear website structure",
+      "Used layout, typography, color, and responsive design to create an accessible experience"
+    ]
+  },
   {
     "modalTitle": "Illustrator Drawing",
     "category": "Graphic Design",
@@ -53,20 +67,6 @@
       "Created an animated interpretation of an idiom using Adobe After Effects and Photoshop",
       "Used motion, timing, and composition to communicate the concept visually",
       "Combined graphic design and animation to create an engaging visual piece"
-    ]
-  },
-  {
-    "modalTitle": "Marlboro Track & Field",
-    "category": "Web Design",
-    "bgImage": "imgs/track1.png",
-    "images": [
-      "imgs/track1.png"
-    ],
-    "link": "https://samhirsch0109.github.io/Marlboro-Track",
-    "description": [
-      "Designed and developed an informational website for the Marlboro High School Track & Field team",
-      "Organized team information, schedules, and resources into a clear website structure",
-      "Used layout, typography, color, and responsive design to create an accessible experience"
     ]
   }
 ]
